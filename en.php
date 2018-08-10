@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cardo">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
 	<link rel="icon" type="image/png" href="imgs/favicon.png">
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 </head>
 
 <style>
@@ -89,10 +89,8 @@
 	.tooltip {
 	    position: relative;
 	    display: inline-block;
-	    /*border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
 	}
 	
-	/* Tooltip text */
 	.tooltip .tooltiptext {
 	    visibility: hidden;
 	    background-color: bisque;
@@ -102,12 +100,10 @@
 	    border-radius: 1px;
 	    font-size: 2.2em;
 	 
-	    /* Position the tooltip text - see examples below! */
 	    position: absolute;
 	    z-index: 1;
 	}
 	
-	/* Show the tooltip text when you mouse over the tooltip container */
 	.tooltip:hover .tooltiptext {
 	    visibility: visible;
 	}
@@ -121,16 +117,31 @@
 </style>
 <body>
 
+<?php if(!isset($_COOKIE["accepted_cookies"])):?>
+<div class="w3-bottom w3-amber" id="cookie_banner">
+  <div class="w3-bar">
+    <div class="w3-row-padding">
+      <div class="w3-col">
+        <p>This site uses cookies to track traffic and keep track of your language setting. To learn more <a href="cookies.php" class="w3-hover-text-blue">click here</a>.</p>
+      </div>
+      <div class="w3-col" style="margin-right: 3em">
+        <button id="accept_cookies" class="w3-display-right">I accept</button>
+      </div>
+    </div>
+  </div>
+</div>
+<?php endif; ?>
+
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
-  <div class="w3-bar" id="myNavbar">  	
+  <div class="w3-bar" id="myNavbar">    
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      	<i class="fa fa-bars"></i>
+        <i class="fa fa-bars"></i>
     </a>
-    <a href="#home" 	 class="w3-bar-item w3-button home">HOME</a>
-    <a href="#about" 	 class="w3-bar-item w3-button w3-hide-small aboutUs"><i class="fa fa-user"></i> ABOUT US</a>
+    <a href="#home"    class="w3-bar-item w3-button home">HOME</a>
+    <a href="#about"   class="w3-bar-item w3-button w3-hide-small aboutUs"><i class="fa fa-user"></i> ABOUT US</a>
     <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small portfolio"><i class="fa fa-th"></i> PORTFOLIO</a>
-    <a href="#contact" 	 class="w3-bar-item w3-button w3-hide-small contact"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#contact"   class="w3-bar-item w3-button w3-hide-small contact"><i class="fa fa-envelope"></i> CONTACT</a>
     <a class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-black flagen">
       <img class="flagIcon" id="enFlag" src="imgs/flags/en.svg">
     </a>
@@ -141,11 +152,13 @@
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" 		class="w3-bar-item w3-button nasT" 		onclick="toggleFunction()">ABOUT US</a>
-    <a href="#portfolio" 	class="w3-bar-item w3-button mapT" 		onclick="toggleFunction()">PORTFOLIO</a>
-    <a href="#contact" 		class="w3-bar-item w3-button kontaktT"	onclick="toggleFunction()">CONTACT</a>
+    <a href="#about"    class="w3-bar-item w3-button nasT"    onclick="toggleFunction()">ABOUT US</a>
+    <a href="#portfolio"  class="w3-bar-item w3-button mapT"    onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact"    class="w3-bar-item w3-button kontaktT"  onclick="toggleFunction()">CONTACT</a>
   </div>
 </div>
+
+
 
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
@@ -221,7 +234,7 @@
   	</div>
 	
 	<div class="w3-row-padding w3-center">
-  		<button id="loadButton" class="w3-button w3-padding-large w3-light-grey w3-center">Naloži VEČ!</button>
+  		<button id="loadButton" class="w3-button w3-padding-large w3-light-grey w3-center">Show me more</button>
 	</div>
 
   	<div class="hiddenProduct"  hidden="true">
@@ -306,7 +319,7 @@
   	  		</div>
     	</div>
     	<div class="w3-row-padding w3-center">
-    		<button id="hideButton" class="w3-button w3-padding-large w3-light-grey w3-center">Skrij</button>
+    		<button id="hideButton" class="w3-button w3-padding-large w3-light-grey w3-center">Hide</button>
     	</div>
   	</div>
 </div>
@@ -339,7 +352,7 @@
     		<a class="tooltip" href="https://www.google.com/maps/place/Vincencij+%C4%8Cepon+sirarstvo+in+kozjereja+-+nosilec+dopolnilne+dejavnosti+na+kmetiji/@45.9480871,14.7865867,410m/data=!3m1!1e3!4m12!1m6!3m5!1s0x4765222d9dafc64b:0x8ed36c94c8e35fef!2sVincencij+%C4%8Cepon+sirarstvo+in+kozjereja+-+nosilec+dopolnilne+dejavnosti+na+kmetiji!8m2!3d45.9480602!4d14.7877294!3m4!1s0x4765222d9dafc64b:0x8ed36c94c8e35fef!8m2!3d45.9480602!4d14.7877294">
     			<div class="w3-row-padding">
     	  			<img src="imgs/map.jpg" class="mapIMG w3-col m12" alt="satelitska slika kmetije">
-    				<i class="tooltiptext w3-col m12">click on the image to have you taken to the exact location in Google Maps</i>    				
+    				<i class="tooltiptext w3-col m12">click on the image to go to the exact location in Google Maps</i>    				
     			</div>
     		</a>
     	</div>
@@ -370,7 +383,7 @@
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-  	<p><small>We do not guarantee data on this site to be current and accurate. This site is for informational purposes.</small></p>
+  	<p><small>We do not guarantee data on this site to be accurate and current. This site is for informational purposes.</small></p>
   	<p>This site is powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
  
@@ -396,14 +409,13 @@
   
   	$("#loadButton").on("click", function(){
   		console.log($(this));
-  		$(this).toggle("hidden", false);
-  	  	$(".hiddenProduct").toggle("hidden", false);
+  		$(this).hide();
+  	  	$(".hiddenProduct").show();
   	});
 
   	$("#hideButton").on("click", function(){
-  		console.log($(this));
-  		$("#loadButton").toggle("hidden", false);
-  		$(".hiddenProduct").toggle("hidden", true);
+  		$("#loadButton").show();
+  		$(".hiddenProduct").hide();
   	});
 
   	$(".flagen").on("click", function(){
@@ -414,6 +426,11 @@
       document.cookie = "language=sl";
       location.reload();
   	});
+
+    $("#accept_cookies").on("click", function(){
+      document.cookie = "accepted_cookies=yes";
+      $("#cookie_banner").hide();
+    });
 	
   	// phone menu opener
   	function toggleFunction() {
