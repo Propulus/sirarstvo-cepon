@@ -132,10 +132,10 @@
     <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small portfolio"><i class="fa fa-th"></i> PORTFOLIO</a>
     <a href="#contact" 	 class="w3-bar-item w3-button w3-hide-small contact"><i class="fa fa-envelope"></i> CONTACT</a>
     <a class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-black flagen">
-      <img class="flagIcon  w3-sepia-max" id="enFlag" src="imgs/flags/en.svg">
+      <img class="flagIcon" id="enFlag" src="imgs/flags/en.svg">
     </a>
     <a class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-black flagsi">
-      <img class="flagIcon" id="siFlag" src="imgs/flags/si.svg">      
+      <img class="flagIcon   w3-sepia-max" id="siFlag" src="imgs/flags/si.svg">      
     </a>
   </div>
 
@@ -407,14 +407,12 @@
   	});
 
   	$(".flagen").on("click", function(){
-  		$("#enFlag").removeClass("w3-sepia-max");
-  		$("#siFlag").addClass("w3-sepia-max");
-  		langChange("en");
+      document.cookie = "language=en";
+      location.reload();
   	});
   	$(".flagsi").on("click", function(){
-  		$("#siFlag").removeClass("w3-sepia-max");
-  		$("#enFlag").addClass("w3-sepia-max");
-  		langChange("slo");
+      document.cookie = "language=sl";
+      location.reload();
   	});
 	
   	// phone menu opener

@@ -127,10 +127,10 @@
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       	<i class="fa fa-bars"></i>
     </a>
-    <a href="#home" 	 class="w3-bar-item w3-button home"><?= $lang["home"];?></a>
-    <a href="#about" 	 class="w3-bar-item w3-button w3-hide-small aboutUs"><i class="fa fa-user"></i> <?= $lang["aboutUs"]?></a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small portfolio"><i class="fa fa-th"></i> <?= $lang["portfolio"]?></a>
-    <a href="#contact" 	 class="w3-bar-item w3-button w3-hide-small contact"><i class="fa fa-envelope"></i> <?= $lang["contact"]?></a>
+    <a href="#home" 	 class="w3-bar-item w3-button home">DOMOV</a>
+    <a href="#about" 	 class="w3-bar-item w3-button w3-hide-small aboutUs"><i class="fa fa-user"></i> O NAS</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small portfolio"><i class="fa fa-th"></i> MAPA</a>
+    <a href="#contact" 	 class="w3-bar-item w3-button w3-hide-small contact"><i class="fa fa-envelope"></i> KONTAKT</a>
     <a class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-black flagen">
       <img class="flagIcon  w3-sepia-max" id="enFlag" src="imgs/flags/en.svg">
     </a>
@@ -406,16 +406,15 @@
   		$(".hiddenProduct").toggle("hidden", true);
   	});
 
-  	$(".flagen").on("click", function(){
-  		$("#enFlag").removeClass("w3-sepia-max");
-  		$("#siFlag").addClass("w3-sepia-max");
-  		langChange("en");
-  	});
-  	$(".flagsi").on("click", function(){
-  		$("#siFlag").removeClass("w3-sepia-max");
-  		$("#enFlag").addClass("w3-sepia-max");
-  		langChange("slo");
-  	});
+
+    $(".flagen").on("click", function(){
+      document.cookie = "language=en";
+      location.reload();
+    });
+    $(".flagsi").on("click", function(){
+      document.cookie = "language=sl";
+      location.reload();
+    });
 	
   	// phone menu opener
   	function toggleFunction() {
