@@ -6,8 +6,8 @@
 	<meta name="author" content="Jan Hribar, jhribar8@gmail.com">
 	<meta name="owner" content="Sirarstvo Čepon">
 	<meta name="HandheldFriendly" content="true">
-	<meta name="description" content="Sirarstvo Čepon je mlada kmetija z dediščino">
-	<meta name="keywords" content="goat, cheese trade, milk, cheese, Čepon, čepon, Cepon, cepon, produce, milk production, dairy, goat cheese, goat yogurt, goat products, yogurt">
+	<meta name="description" content="Cheese dairy Čepon is a new and young farm with a heritage">
+	<meta name="keywords" content="goat, cheese trade, milk, cheese, čepon, cepon, produce, milk production, dairy, goat cheese, goat yogurt, goat products, yogurt, sirarstvo čepon, sirarstvo cepon, cheese dairy Cepon, cheese dairy Čepon">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla">
@@ -51,19 +51,19 @@
 	
 	/* home img */
 	.bgimg-1 {
-	    background-image: url("imgs/doma.jpg");
+	    background-image: url("imgs/site/doma.jpg");
 	    min-height: 100%;
 	}
 	
 	/* portoflio img */
 	.bgimg-2 {
-	    background-image: url("imgs/molze.jpg");
+	    background-image: url("imgs/site/molze.jpg");
 	    min-height: 400px;
 	}
 	
 	/* location img */
 	.bgimg-3 {
-	    background-image: url("imgs/ivancna.jpg");
+	    background-image: url("imgs/site/ivancna.jpg");
 	    min-height: 400px;
 	}
 
@@ -177,7 +177,7 @@
   <div class="w3-row-padding">
     <div class="w3-col m6 w3-center w3-padding-large">
       <br>
-      <img src="imgs/koze.jpg" onclick="onClick(this)" class="w3-round w3-image" alt="Radovedna skupščina" width="500" height="333">
+      <img src="imgs/site/koze.jpg" onclick="onClick(this)" class="w3-round w3-image" alt="Radovedna skupščina" width="500" height="333">
     </div>
 
     <!-- Hide this text on small devices -->
@@ -351,7 +351,7 @@
     	<div class="w3-col m6 w3-container">
     		<a class="tooltip" href="https://www.google.com/maps/place/Vincencij+%C4%8Cepon+sirarstvo+in+kozjereja+-+nosilec+dopolnilne+dejavnosti+na+kmetiji/@45.9480871,14.7865867,410m/data=!3m1!1e3!4m12!1m6!3m5!1s0x4765222d9dafc64b:0x8ed36c94c8e35fef!2sVincencij+%C4%8Cepon+sirarstvo+in+kozjereja+-+nosilec+dopolnilne+dejavnosti+na+kmetiji!8m2!3d45.9480602!4d14.7877294!3m4!1s0x4765222d9dafc64b:0x8ed36c94c8e35fef!8m2!3d45.9480602!4d14.7877294">
     			<div class="w3-row-padding">
-    	  			<img src="imgs/map.jpg" class="mapIMG w3-col m12" alt="satelitska slika kmetije">
+    	  			<img src="imgs/site/map.jpg" class="mapIMG w3-col m12" alt="satelitska slika kmetije">
     				<i class="tooltiptext w3-col m12">click on the image to go to the exact location in Google Maps</i>    				
     			</div>
     		</a>
@@ -359,8 +359,8 @@
     	<div class="w3-col m6 w3-panel">
     	  	<div class="w3-large w3-margin-bottom">
     			<i class="fa fa-map-marker-alt fa-fw w3-hover-text-red w3-xlarge w3-margin-right"></i> Stična, Slovenija<br>
-    			<i class="fa fa-mobile-alt fa-fw w3-hover-text-indigo w3-xlarge w3-margin-right"></i> phone: 051 370 878<br>
-    			<i class="fa fa-at fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> e-mail: kontakt@sirarstvo-cepon.com<br>
+    			<i class="fa fa-mobile-alt fa-fw w3-hover-text-indigo w3-xlarge w3-margin-right"></i> phone: 031 280 034<br>
+    			<i class="fa fa-at fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> e-mail: kontakt@sirarstvo-cepon.si<br>
     			<i class="fa fa-envelope fa-fw w3-hover-text-khaki w3-xlarge w3-margin-right"></i> Stična 103, 1295 Ivančna Gorica, Slovenija<br>
     	  	</div>
     	</div>
@@ -373,8 +373,8 @@
     	  		<a href="https://www.google.com/maps/place/Vincencij+%C4%8Cepon+sirarstvo+in+kozjereja+-+nosilec+dopolnilne+dejavnosti+na+kmetiji/@45.9480871,14.7865867,410m/data=!3m1!1e3!4m12!1m6!3m5!1s0x4765222d9dafc64b:0x8ed36c94c8e35fef!2sVincencij+%C4%8Cepon+sirarstvo+in+kozjereja+-+nosilec+dopolnilne+dejavnosti+na+kmetiji!8m2!3d45.9480602!4d14.7877294!3m4!1s0x4765222d9dafc64b:0x8ed36c94c8e35fef!8m2!3d45.9480602!4d14.7877294">
     				<i class="fa fa-map-marked-alt fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Where are we</br>
     			</a>
-    			<i class="fa fa-mobile-alt fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> phone: 051 370 878<br>
-    			<i class="fa fa-at fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> e-mail: kontakt@sirarstvo-cepon.com<br>
+    			<i class="fa fa-mobile-alt fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> phone: 031 280 034<br>
+    			<i class="fa fa-at fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> e-mail: kontakt@sirarstvo-cepon.si<br>
     			<i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Stična 103, 1295 Ivančna Gorica, Slovenija<br>
     	  	</div>
     	</div>
