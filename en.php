@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Cheese dairy Čepon</title>
+	<title>Sirarstvo Čepon</title>
 	<meta charset="UTF-8">
 	<meta name="author" content="Jan Hribar, jhribar8@gmail.com">
 	<meta name="owner" content="Sirarstvo Čepon">
 	<meta name="HandheldFriendly" content="true">
-	<meta name="description" content="Cheese dairy Čepon is a new and young farm with a heritage">
+	<meta name="description" content="Sirarstvo (Cheese dairy) Čepon is a new and young farm with a heritage">
 	<meta name="keywords" content="goat, cheese trade, milk, cheese, čepon, cepon, produce, milk production, dairy, goat cheese, goat yogurt, goat products, yogurt, sirarstvo čepon, sirarstvo cepon, cheese dairy Cepon, cheese dairy Čepon">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -51,19 +51,19 @@
 	
 	/* home img */
 	.bgimg-1 {
-	    background-image: url("imgs/site/doma.jpg");
+	    background-image: url("imgs/site/doma.JPG");
 	    min-height: 100%;
 	}
 	
 	/* portoflio img */
 	.bgimg-2 {
-	    background-image: url("imgs/site/molze.jpg");
+	    background-image: url("imgs/site/molze.JPG");
 	    min-height: 400px;
 	}
 	
 	/* location img */
 	.bgimg-3 {
-	    background-image: url("imgs/site/ivancna.jpg");
+	    background-image: url("imgs/site/ivancna.JPG");
 	    min-height: 400px;
 	}
 
@@ -163,7 +163,7 @@
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"><span class="w3-hide-small">CHEESE DAIRY</span> ČEPON</span>
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"><span class="w3-hide-small">SIRARSTVO</span> ČEPON</span>
   </div>
 </div>
 
@@ -177,7 +177,7 @@
   <div class="w3-row-padding">
     <div class="w3-col m6 w3-center w3-padding-large">
       <br>
-      <img src="imgs/site/koze.jpg" onclick="onClick(this)" class="w3-round w3-image" alt="Radovedna skupščina" width="500" height="333">
+      <img src="imgs/site/koze.JPG" onclick="onClick(this)" class="w3-round w3-image" alt="Radovedna skupščina" width="500" height="333">
     </div>
 
     <!-- Hide this text on small devices -->
@@ -351,7 +351,7 @@
     	<div class="w3-col m6 w3-container">
     		<a class="tooltip" href="https://www.google.com/maps/place/Vincencij+%C4%8Cepon+sirarstvo+in+kozjereja+-+nosilec+dopolnilne+dejavnosti+na+kmetiji/@45.9480871,14.7865867,410m/data=!3m1!1e3!4m12!1m6!3m5!1s0x4765222d9dafc64b:0x8ed36c94c8e35fef!2sVincencij+%C4%8Cepon+sirarstvo+in+kozjereja+-+nosilec+dopolnilne+dejavnosti+na+kmetiji!8m2!3d45.9480602!4d14.7877294!3m4!1s0x4765222d9dafc64b:0x8ed36c94c8e35fef!8m2!3d45.9480602!4d14.7877294">
     			<div class="w3-row-padding">
-    	  			<img src="imgs/site/map.jpg" class="mapIMG w3-col m12" alt="satelitska slika kmetije">
+    	  			<img src="imgs/site/map.JPG" class="mapIMG w3-col m12" alt="satelitska slika kmetije">
     				<i class="tooltiptext w3-col m12">click on the image to go to the exact location in Google Maps</i>    				
     			</div>
     		</a>
@@ -384,7 +384,8 @@
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
   	<p><small>We do not guarantee data on this site to be accurate and current. This site is for informational purposes.</small></p>
-  	<p>This site is powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+    <p><small>If you wish to see information about our cookies <a href="cookies_en.php" title="W3.CSS" target="_blank" class="w3-hover-text-green">click here</a></small></p>
+    <p>This site is powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
  
 <script>
