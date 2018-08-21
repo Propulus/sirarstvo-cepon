@@ -126,7 +126,7 @@
   <div class="w3-bar">
     <div class="w3-row-padding">
       <div class="w3-col">
-        <p>Ta stran uporablja piškotke, da spremlja prometa in shranjuje vašo izbiro jezika. Da izveste več <a href="cookies.php" class="w3-hover-text-blue">kliknite sem</a>.</p>
+        <p>Ta stran uporablja piškotke, da spremlja prometa in shranjuje vašo izbiro jezika. Da izveste več <a href="cookies_sl.php" class="w3-hover-text-blue">kliknite sem</a>.</p>
       </div>
       <div class="w3-col" style="margin-right: 3em">
         <button id="accept_cookies" class="w3-display-right">Sprejmem</button>

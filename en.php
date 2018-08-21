@@ -122,7 +122,7 @@
   <div class="w3-bar">
     <div class="w3-row-padding">
       <div class="w3-col">
-        <p>This site uses cookies to track traffic and keep track of your language setting. To learn more <a href="cookies.php" class="w3-hover-text-blue">click here</a>.</p>
+        <p>This site uses cookies to track traffic and keep track of your language setting. To learn more <a href="cookies_en.php" class="w3-hover-text-blue">click here</a>.</p>
       </div>
       <div class="w3-col" style="margin-right: 3em">
         <button id="accept_cookies" class="w3-display-right">I accept</button>
