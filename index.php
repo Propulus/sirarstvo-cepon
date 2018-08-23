@@ -1,9 +1,18 @@
-<html>
-<head>
-</head>
-<body class="all">
-<div class="w3-content w3-container w3-padding-64">
-  <h1 class="w3-center">Stran je v izdelavi</h1>
-</div>
-</body>
-</html>
+<?php 
+	if(!isset($_COOKIE["language"])){
+		if (substr($_SERVER["HTTP_ACCEPT_LANGUAGE"], 0, 2) == "sl") {
+			include "slo.php";
+		}
+		else {
+			include "en.php";
+		}		
+	} else {
+		$lang = $_COOKIE["language"];
+		if ($lang == "sl") {
+			include "slo.php";
+		}
+		else {
+			include "en.php";
+		}
+	}
+?>

@@ -8,19 +8,24 @@
 	<meta name="HandheldFriendly" content="true">
 	<meta name="description" content="Sirarstvo Čepon je mlada kmetija z dediščino">
 	<meta name="keywords" content="kozjereja, sirarstvo, koze, mleko, sir, Čepon, čepon, cepon, Cepon, pridelovanje, mlekarna, sirarna, sir, kozji sir, kozji izdelki, jogurt, kozji jogurt, sirarstvo čepon, sirarstvo cepon, cheese dairy Cepon, cheese dairy Čepon">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cardo">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
-	<link rel="icon" type="image/png" href="imgs/favicon.png">
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cardo">
+  <link rel="icon" type="image/png" href="imgs/favicon.png">
+  <link rel="stylesheet" href="css/font-awesome/css/all.css">
+  <link rel="stylesheet" href="css/w3.css">
+  <script src="jquery-3.3.1.min.js"></script>
 </head>
 
 <style>
 	body,h1,h2,h3,h4,h5,h6 {
 	  	font-family: "Karla", sans-serif;
 	}
+
+  h4 {
+    color: orange;
+    font-weight: bold;
+  }
 
 	a {
 		text-decoration: none;
@@ -40,6 +45,10 @@
 	.prodText {
 		margin-top: 1em;
 	}
+
+  .parTekst {
+    font-weight: bold;
+  }
 
 	/* parallax magic */
 	.bgimg-1, .bgimg-2, .bgimg-3 {
@@ -126,7 +135,7 @@
   <div class="w3-bar">
     <div class="w3-row-padding">
       <div class="w3-col">
-        <p>Ta stran uporablja piškotke, da spremlja prometa in shranjuje vašo izbiro jezika. Da izveste več <a href="cookies_sl.php" class="w3-hover-text-blue">kliknite sem</a>.</p>
+        <p>Ta stran uporablja piškotke, da spremlja promet in shranjuje vašo izbiro jezika. Da izveste več <a href="cookies_sl.php" class="w3-hover-text-blue">kliknite tukaj</a>.</p>
       </div>
       <div class="w3-col" style="margin-right: 3em">
         <button id="accept_cookies" class="w3-display-right">Sprejmem</button>
@@ -144,12 +153,12 @@
     </a>
     <a href="#home" 	 class="w3-bar-item w3-button home">DOMOV</a>
     <a href="#about" 	 class="w3-bar-item w3-button w3-hide-small aboutUs"><i class="fa fa-user"></i> O NAS</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small portfolio"><i class="fa fa-th"></i> MAPA</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small portfolio"><i class="fa fa-th"></i> IZDELKI</a>
     <a href="#contact" 	 class="w3-bar-item w3-button w3-hide-small contact"><i class="fa fa-envelope"></i> KONTAKT</a>
-    <a class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-black flagen">
+    <a class="w3-bar-item w3-right w3-hover-black w3-button flagen">
       <img class="flagIcon  w3-sepia-max" id="enFlag" src="imgs/flags/en.svg">
     </a>
-    <a class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-black flagsi">
+    <a class="w3-bar-item w3-right w3-hover-black w3-button flagsi">
       <img class="flagIcon" id="siFlag" src="imgs/flags/si.svg">      
     </a>
   </div>
@@ -157,7 +166,7 @@
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
     <a href="#about" 		class="w3-bar-item w3-button nasT" 		onclick="toggleFunction()">O NAS</a>
-    <a href="#portfolio" 	class="w3-bar-item w3-button mapT" 		onclick="toggleFunction()">MAPA</a>
+    <a href="#portfolio" 	class="w3-bar-item w3-button mapT" 		onclick="toggleFunction()">IZDELKI</a>
     <a href="#contact" 		class="w3-bar-item w3-button kontaktT"	onclick="toggleFunction()">KONTAKT</a>
   </div>
 </div>
@@ -171,30 +180,42 @@
 
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">O NAS</h3>
-  <p class="w3-center"><i>Koze so naša strast</i></p>
-  <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-    qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  <div class="w3-row-padding">
-    <div class="w3-col m6 w3-center w3-padding-large">
-      <br>
-      <img src="imgs/site/koze.JPG" onclick="onClick(this)" class="w3-round w3-image" alt="Radovedna skupščina" width="500" height="333">
+    <h3 class="w3-center">O NAS</h3>
+    <p>Kmetija ČEPON se nahaja nad samostanom Stična v občini Ivančna gorica. Ustanovitelja kmetije sta bila pokojni Vincencij in njegova žena  Heos Ferdinanda Čepon, ki sta pred dobrimi 26 leti začela z vzrejo koz in predelavo kozjega mleka. Tako sta tudi začela pot blagovne znamke ČEPON.</p>
+    <p>V letu 2010 se jima je bolj po naključju zaradi naročila mizarskih storitev, kot pa z resnim namenom ukvarjati se s kozjerejo pridružil mladi mizar Jure Dremelj, kateremu pa so koze precej hitro prirasle k srcu in je vedno pogosteje obiskoval kmetijo in se pri pokojnem Vincenciju Čepon priučil veščin, ki so potrebne na kmetiji. V letu 2017 je Vincencij Čepon sprejel odločitev, da zaradi starosti zapre dopolnilno dejavnost in »ugasne« kmetijo, vendar ga je Jure Dremelj prepričal, da mu je kmetijo z mlekarskim obratom oddal v dolgoročni najem skupaj z blagovno znamko.</p>
+    <p>Tako je Jure Dremelj s partnerko Saro Hribar (takrat še Hribar – sedaj Dremelj) s 1. 1. 2018 postal nosilec dopolnilne dejavnosti na kmetiji in nadaljuje z delom na kmetiji in v mlekarni. </p>
+    <div class="w3-row-padding">
+        <div class="w3-col m6 w3-center w3-padding-large">
+            <img src="imgs/site/koze.JPG" onclick="onClick(this)" class="w3-round w3-image" alt="Radovedna skupščina" width="500" height="333">
+        </div>
+        <div class="w3-col m6 w3-center w3-padding-large">
+            <p>Na kmetiji je več kot 50 molznih koz in še približno toliko (30-40) mladic, ki se pasejo na dveh večji pašnikih v neposredni bližini hleva. Poleg tega k kmetiji spada še več ha najetih zemljišč, ki so vsa ograjena. Kmetija je usmerjena v ekološko kmetovanje. Krmni obrok je sestavljen iz paše, mrve in posebne žitne mešanice za ekološko rejo.</p>
+        </div>
     </div>
-
-    <!-- Hide this text on small devices -->
-    <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div class="w3-row-padding">
+      <div class="w3-col m4">
+          <p>V mlekarni se proizvaja:</p>
+          <ul>
+              <li>Sveže kozje mleko</li>
+              <li>Kozji jogurt</li>
+              <li>Kozja skuta</li>
+              <li>Kefir</li>
+              <li>Mladi kozji sir</li>
+              <li>Zorjeni kozji sir</li>
+              <li>Dimljeni kozji sir</li>
+              <li>Sirotka</li>
+          </ul>
+      </div>      
+      <div class="w3-col m8">
+        <p>Svoje proizvode tržita v trgovski mreži Mercator ter v trgovinah Interspar, nekaj pa tudi na ljubljanski pokriti tržnici in na različnih sejmih. Seveda pa je vse trenutno razpoložljive proizvode možno pokusiti in kupiti na sami kmetiji, za kar pa je zaželjena predhodne najava na GSM številko, saj delo na kmetiji zahteva veliko dela tudi izven mlekarne in hleva.</p>
+      </div>
     </div>
-  </div>
 </div>
 
 <!-- Second Parallax Image with Portfolio Text -->
 <div class="bgimg-2 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">MAPA</span>
+    <span class="w3-xxlarge w3-text-white w3-wide parTekst">IZDELKI</span>
   </div>
 </div>
 
@@ -208,89 +229,84 @@
   	  	  	<img src="imgs/izdelki/p9.jpg" onclick="onClick(this)" class="w3-hover-opacity productIMG" alt="Vsi izdelki">
   	  	</div>
   	</div>
-	
+	<!-- mlek (l) -->
   	<div class="w3-row-padding w3-center">
   	  	<div class="w3-col m6">
   	  	  	<img src="imgs/izdelki/p1.jpg" onclick="onClick(this)" class="w3-hover-opacity productIMG" alt="Mleko 660ml">
   	  	</div>
   	  	<div class="w3-col m6 prodText">
-  	  	  	<i>Mleko 660ml ome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim </i>
+            <h4>Kozje mleko</h4>
+  	  	  	<i>Za koze velja, da so najbolj izbirčne med živalmi, ki dajejo mleko. Izbirajo samo najboljše in zdravilne rastline. Zato koze nikdar ne dobijo raka in s tem fenomenom zaposlujejo številne raziskovalce, ki upajo, da bi morda prav s pomočjo koz odkrili »čudežno formulo« proti raku. Že od Hipokrata naprej pa velja, da so kozje mleko, kozje kislo mleko, kozja sirotka, kozji jogurt in kozji sir prava zdravila za vrsto bolezni. O kozjem mleku in njegovem zdravilnem učinku je sicer veliko strokovne literature, ki je dostopna na svetovnem spletu. Proizvod se trži v trgovski verigi Mercator in trgovinah Interspar.</i>
   	  	</div>
   	</div>
-  	<div class="w3-row-padding w3-center">
-  	  	<div class="w3-col m6 w3-hide-small prodText">
-  	  	  	<i>Mladi sir ome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim </i>
-  	  	</div>
-  	  	<div class="w3-col m6">
-  	  	  	<img src="imgs/izdelki/p2.jpg" onclick="onClick(this)" class="w3-hover-opacity productIMG" alt="Mladi sir">
-  	  	</div>
-  	  	<div class="w3-col m6 w3-hide-medium w3-hide-large prodText">
-  	  	  	<i>Mladi sir I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua.</i>
-  	  	</div>
-  	</div>
+    <!-- lonček (d) -->
+    <div class="w3-row-padding w3-center">
+        <div class="w3-col m6 w3-hide-small prodText">
+            <h4>Jogurt iz kozjega mleka v lončku</h4>
+            <i>Zdravilnemu kozjemu mleku se po pasterizaciji med hlajenjem doda jogurtova kultura, nato sledi fermentacija  in nato dokončno hlajenje - nastane probiotični tekoči jogurt. Jogurt se lahko uporabi kot samostojni osvežilni napitek, dodaja pa se mu lahko različno sezonsko sadje po lastni izbiri posameznika. Proizvod se trži v trgovski verigi Mercator in trgovinah Interspar.</i>
+        </div>
+        <div class="w3-col m6">
+            <img src="imgs/izdelki/p5.jpg" onclick="onClick(this)" class="w3-hover-opacity productIMG" alt="Jogurt v lončku">
+        </div>
+        <div class="w3-col m6 w3-hide-medium w3-hide-large prodText">
+            <h4>Jogurt iz kozjega mleka v lončku</h4>
+            <i>Zdravilnemu kozjemu mleku se po pasterizaciji med hlajenjem doda jogurtova kultura, nato sledi fermentacija  in nato dokončno hlajenje - nastane probiotični tekoči jogurt. Jogurt se lahko uporabi kot samostojni osvežilni napitek, dodaja pa se mu lahko različno sezonsko sadje po lastni izbiri posameznika. Proizvod se trži v trgovski verigi Mercator in trgovinah Interspar.</i>
+        </div>
+    </div>
 	
 	<div class="w3-row-padding w3-center">
   		<button id="loadButton" class="w3-button w3-padding-large w3-light-grey w3-center">Naloži VEČ!</button>
 	</div>
 
   	<div class="hiddenProduct"  hidden="true">
-    	<div class="w3-row-padding w3-center">
-    	  	<div class="w3-col m6">
-    	  	  	<img src="imgs/izdelki/p3.jpg" onclick="onClick(this)" class="w3-hover-opacity productIMG" alt="Zreli sir">
-    	  	</div>
-    	  	<div class="w3-col m6 prodText">
-    	  	  	<i>Zreli sir I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua.</i>
-    	  	</div>
-    	</div>
-	
+        <!-- mladi sir (l) -->
+        <div class="w3-row-padding w3-center">
+            <div class="w3-col m6">
+                <img src="imgs/izdelki/p2.jpg" onclick="onClick(this)" class="w3-hover-opacity productIMG" alt="Mladi sir">
+            </div>
+            <div class="w3-col m6 prodText">
+            <h4>Mladi sir iz kozjega mleka</h4>
+              <i>Pasteriziranemu kozjemu mleku se med postopkom doda kultura in sirilo. Po opravljenem postopku dogrevanja, mešanja in hlajenja, se mešanica sirnih zrn s sirotko nadeva v sirarske modele in pusti, da se sirotka odteče. Nato se ga vakuumsko zapakira in se kot takega lahko uporabi naslednji 30 dni. Uživa se ga lahko samostojno ali kot priloga ustreznim mesnim ali drugim dobrotam.</i>
+            </div>
+        </div>
+        <!-- zorjeni sir (d) -->
+        <div class="w3-row-padding w3-center">
+            <div class="w3-col m6 w3-hide-small prodText">
+                <h4>Zorjeni sir iz kozjega mleka</h4>
+                <i>Mladi kozji sir se namesto vakumskega pakiranja shrani v zorilnico, kjer se ga neguje med zorjenjem naslednjih najmanj 60 dni na predpisani temperaturi in ob predpisani vlagi. Po svoji strukturi je precej bol čvrst od mladega sira, velja pa enak način uporabe, kot za mladi sir.</i>
+            </div>
+            <div class="w3-col m6">
+                <img src="imgs/izdelki/p3.jpg" onclick="onClick(this)" class="w3-hover-opacity productIMG" alt="Zreli sir">
+            </div>
+            <div class="w3-col m6 w3-hide-medium w3-hide-large prodText">
+                <h4>Zorjeni sir iz kozjega mleka</h4>
+                <i>Mladi kozji sir se namesto vakumskega pakiranja shrani v zorilnico, kjer se ga neguje med zorjenjem naslednjih najmanj 60 dni na predpisani temperaturi in ob predpisani vlagi. Po svoji strukturi je precej bol čvrst od mladega sira, velja pa enak način uporabe, kot za mladi sir.</i>
+            </div>
+        </div>
+        <!-- kajeni sir (l) -->
+        <div class="w3-row-padding w3-center">
+            <div class="w3-row-padding w3-center">
+                <div class="w3-col m6">
+                    <img src="imgs/izdelki/p4.jpg" onclick="onClick(this)" class="w3-hover-opacity productIMG" alt="Prekajeni sir">
+                </div>
+                <div class="w3-col m6 prodText">
+                    <h4>Dimljeni zorjeni sir iz kozjega mleka</h4>
+                    <i>Zorjeni kozji sir se pred vakuumskim pakiranjem krajši (za milejši priokus) ali malo daljši čas (nekaj ur) preseli v dimno komoro. Za poznavalce in gurmane je posebej iskan prehranski proizvod oziroma kulinarična dobrota.</i>
+                </div>
+            </div>
+        </div>        
+        <!-- jogurt v flašlo (d) -->
     	<div class="w3-row-padding w3-center">
     	  	<div class="w3-col m6 w3-hide-small prodText">
-  	  		  	<i>Prekajeni sir I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua.</i>
-  	  		</div>
-    	  	<div class="w3-col m6">
-    	  	  	<img src="imgs/izdelki/p4.jpg" onclick="onClick(this)" class="w3-hover-opacity productIMG" alt="Prekajeni sir">
-    	  	</div>
-    	  	<div class="w3-col m6 w3-hide-medium w3-hide-large prodText">
-  	  		  	<i>Prekajeni sir I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua.</i>
-  	  		</div>
-    	</div>
-	
-    	<div class="w3-row-padding w3-center">
-    	  	<div class="w3-col m6">
-    	  	  	<img src="imgs/izdelki/p5.jpg" onclick="onClick(this)" class="w3-hover-opacity productIMG" alt="Jogurt v lončku">
-    	  	</div>
-    	  	<div class="w3-col m6 prodText">
-    	  	  	<i>lorem upsum I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua.</i>
-    	  	</div>
-    	</div>
-	
-    	<div class="w3-row-padding w3-center">
-    	  	<div class="w3-col m6 w3-hide-small prodText">
-  	  		  	<i>Jogurt v flaški I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua.</i>
+            <h4>Jogurt iz kozjega mleka v flaški</h4>
+              <i>Zdravilnemu kozjemu mleku se po pasterizaciji med hlajenjem doda jogurtova kultura, nato sledi fermentacija  in nato dokončno hlajenje - nastane probiotični tekoči jogurt. Jogurt se lahko uporabi kot samostojni osvežilni napitek, dodaja pa se mu lahko različno sezonsko sadje po lastni izbiri posameznika. Proizvod se trži v trgovski verigi Mercator in trgovinah Interspar.</i>
   	  		</div>
     	  	<div class="w3-col m6">
     	    	<img src="imgs/izdelki/p6.jpg" onclick="onClick(this)" class="w3-hover-opacity productIMG" alt="Jogurt v flaški">
     	  	</div>
     	  	<div class="w3-col m6 w3-hide-medium w3-hide-large prodText">
-  	  		  	<i>Jogurt v flaški I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua.</i>
+  	  		  	<h4>Jogurt iz kozjega mleka v flaški</h4>
+              <i>Zdravilnemu kozjemu mleku se po pasterizaciji med hlajenjem doda jogurtova kultura, nato sledi fermentacija  in nato dokončno hlajenje - nastane probiotični tekoči jogurt. Jogurt se lahko uporabi kot samostojni osvežilni napitek, dodaja pa se mu lahko različno sezonsko sadje po lastni izbiri posameznika. Proizvod se trži v trgovski verigi Mercator in trgovinah Interspar.</i>
   	  		</div>
     	</div>
 	
@@ -299,25 +315,22 @@
     	  	  	<img src="imgs/izdelki/p7.jpg" onclick="onClick(this)" class="w3-hover-opacity productIMG" alt="Kefir">
     	  	</div>
     	  	<div class="w3-col m6 prodText">
-    	  	  	<i>lorem upsum I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua.</i>
+              <h4>Kefir iz kozjega mleka</h4>
+    	  	  	<i>Pasterizirano kozje mleko prelije preko kefirjevi zrn in približni en dan pusti fermentirati na temperaturi 23 stopinj. Dobimo fermentirani osvežilni napitek malce kislejšega okusa, vendar v njegovo zdravilno vlogo v prehrani ni dvomiti.</i>
     	  	</div>
     	</div>
 	
     	<div class="w3-row-padding w3-center">
     		<div class="w3-col m6 w3-hide-small prodText">
-  	  		  	<i>Kozje klobase I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua.</i>
+              <h4>Klobase iz kozjega mesa</h4>
+  	  		  	<i>Gre za povsem sezonski proizvod v času meseca marca, aprila ali maja, ko so mladiči dovolj veliki, da je njihovo meso uporabno za prehrano. Glede na izkušnje in preverjeno strokovnost mesarja, so precej iskan in zaželjen mesni proizvod pri mesojedih uporabnikih predvsem v širšem družinskem krogu in med prijatelji. Proizvod še ni namenjen prodaji, možno pa ga je preizkusiti ob obisku na kmetiji.</i>
   	  		</div>
     		<div class="w3-col m6">
     			<img src="imgs/izdelki/p8.jpg" onclick="onClick(this)" class="w3-hover-opacity productIMG" alt="Kozje klobase">
     		</div>
     		<div class="w3-col m6 w3-hide-medium w3-hide-large prodText">
-  	  		  	<i>Kozje klobase I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua.</i>
+              <h4>Klobase iz kozjega mesa</h4>
+  	  		  	<i>Gre za povsem sezonski proizvod v času meseca marca, aprila ali maja, ko so mladiči dovolj veliki, da je njihovo meso uporabno za prehrano. Glede na izkušnje in preverjeno strokovnost mesarja, so precej iskan in zaželjen mesni proizvod pri mesojedih uporabnikih predvsem v širšem družinskem krogu in med prijatelji. Proizvod še ni namenjen prodaji, možno pa ga je preizkusiti ob obisku na kmetiji.</i>
   	  		</div>
     	</div>
     	<div class="w3-row-padding w3-center">
@@ -337,10 +350,10 @@
   	</div>
 </div>
 
-<!-- Portfolio img -->
+<!-- contact img -->
 <div class="bgimg-3 w3-display-container w3-opacity-min">
  	<div class="w3-display-middle">
- 		<span class="w3-xxlarge w3-text-white w3-wide kontaktT">KONTAKT</span>
+ 		<span class="w3-xxlarge w3-text-white w3-wide kontaktT parTekst">KONTAKT</span>
  	</div>
 </div>
 
@@ -386,12 +399,11 @@
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
   	<p><small>Ne zagotavljamo, da so podatki na tej strani točni in trenutni. Stran je v informativne namene.</small></p>
-    <p><small>Če želite informacije o naših piškotkih <a href="cookies_sl.php" title="W3.CSS" target="_blank" class="w3-hover-text-green">kliknite sem</a></small></p>
+    <p><small>Če želite informacije o naših piškotkih <a href="cookies_sl.php" title="cookies" target="_blank" class="w3-hover-text-green">kliknite sem</a>, če želite videti pravilnik o zasebnosti <a href="privacy_policy_sl.php" class="w3-hover-text-green">kliknite sem</a></small></p>
   	<p>To stran poganja <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
  
 <script>
-
   	// Modal Image Gallery
   	function onClick(element) {
   	  	document.getElementById("focusIMG").src = element.src;
@@ -422,20 +434,39 @@
       $(".hiddenProduct").hide();
     });
 
-
-    $(".flagen").on("click", function(){
-      document.cookie = "language=en";
+    $(".flagen").on("click", function(){   
+      if(readCookie("accepted_cookies")=="yes"){
+        setCookie("language", "en", 365);
+      }
       location.reload();
     });
-    $(".flagsi").on("click", function(){
-      document.cookie = "language=sl";
+    $(".flagsi").on("click", function(){      
+      if(readCookie("accepted_cookies")=="yes"){
+        setCookie("language", "sl", 365);        
+      }
       location.reload();
     });
 
     $("#accept_cookies").on("click", function(){
-      document.cookie = "accepted_cookies=yes";
+      setCookie("accepted_cookies", "yes", 365);
       $("#cookie_banner").hide();
     });
+    function setCookie(cname, cvalue, exdays) {
+      var d = new Date();
+      d.setTime(d.getTime()+(exdays*24*60*60*1000));
+      var expires = "; expires="+d.toGMTString();
+      document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
+    function readCookie(name) {
+      var nameEQ = name + "=";
+      var ca = document.cookie.split(';');
+      for(var i=0;i < ca.length;i++) {
+          var c = ca[i];
+          while (c.charAt(0)==' ') c = c.substring(1,c.length);
+          if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+      }
+      return null;
+    }
 	
   	// phone menu opener
   	function toggleFunction() {

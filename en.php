@@ -8,13 +8,13 @@
 	<meta name="HandheldFriendly" content="true">
 	<meta name="description" content="Sirarstvo (Cheese dairy) Čepon is a new and young farm with a heritage">
 	<meta name="keywords" content="goat, cheese trade, milk, cheese, čepon, cepon, produce, milk production, dairy, goat cheese, goat yogurt, goat products, yogurt, sirarstvo čepon, sirarstvo cepon, cheese dairy Cepon, cheese dairy Čepon">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cardo">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
-	<link rel="icon" type="image/png" href="imgs/favicon.png">
-	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cardo">
+  <link rel="icon" type="image/png" href="imgs/favicon.png">
+  <link rel="stylesheet" href="css/font-awesome/css/all.css">
+  <link rel="stylesheet" href="css/w3.css">
+  <script src="jquery-3.3.1.min.js"></script>
 </head>
 
 <style>
@@ -142,11 +142,11 @@
     <a href="#about"   class="w3-bar-item w3-button w3-hide-small aboutUs"><i class="fa fa-user"></i> ABOUT US</a>
     <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small portfolio"><i class="fa fa-th"></i> PORTFOLIO</a>
     <a href="#contact"   class="w3-bar-item w3-button w3-hide-small contact"><i class="fa fa-envelope"></i> CONTACT</a>
-    <a class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-black flagen">
+    <a class="w3-bar-item w3-right w3-hover-black w3-button flagen">
       <img class="flagIcon" id="enFlag" src="imgs/flags/en.svg">
     </a>
-    <a class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-black flagsi">
-      <img class="flagIcon   w3-sepia-max" id="siFlag" src="imgs/flags/si.svg">      
+    <a class="w3-bar-item w3-right w3-hover-black w3-button flagsi">
+      <img class="flagIcon  w3-sepia-max" id="siFlag" src="imgs/flags/si.svg">      
     </a>
   </div>
 
@@ -155,7 +155,7 @@
     <a href="#about"    class="w3-bar-item w3-button nasT"    onclick="toggleFunction()">ABOUT US</a>
     <a href="#portfolio"  class="w3-bar-item w3-button mapT"    onclick="toggleFunction()">PORTFOLIO</a>
     <a href="#contact"    class="w3-bar-item w3-button kontaktT"  onclick="toggleFunction()">CONTACT</a>
-  </div>
+  </div>  
 </div>
 
 
@@ -384,7 +384,7 @@
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
   	<p><small>We do not guarantee data on this site to be accurate and current. This site is for informational purposes.</small></p>
-    <p><small>If you wish to see information about our cookies <a href="cookies_en.php" title="W3.CSS" target="_blank" class="w3-hover-text-green">click here</a></small></p>
+    <p><small>If you wish to see information about our cookies <a href="cookies_en.php" title="W3.CSS" target="_blank" class="w3-hover-text-green">click here</a>, if you wish to see information about our privacy policy <a href="privacy_policy_en.php" class="w3-hover-text-green">click here</a></small></p>
     <p>This site is powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
  
@@ -419,28 +419,49 @@
   		$(".hiddenProduct").hide();
   	});
 
-  	$(".flagen").on("click", function(){
-      document.cookie = "language=en";
+  	$(".flagen").on("click", function(){   
+      if(readCookie("accepted_cookies")=="yes"){
+        setCookie("language", "en", 365);
+      }
       location.reload();
-  	});
-  	$(".flagsi").on("click", function(){
-      document.cookie = "language=sl";
+    });
+    $(".flagsi").on("click", function(){      
+      if(readCookie("accepted_cookies")=="yes"){
+        setCookie("language", "sl", 365);        
+      }
       location.reload();
-  	});
+    });
 
     $("#accept_cookies").on("click", function(){
-      document.cookie = "accepted_cookies=yes";
+      setCookie("accepted_cookies", "yes", 365);
       $("#cookie_banner").hide();
+      console.log(readCookie("accepted_cookies"));
     });
+    function setCookie(cname, cvalue, exdays) {
+      var d = new Date();
+      d.setTime(d.getTime()+(exdays*24*60*60*1000));
+      var expires = "; expires="+d.toGMTString();
+      document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
+    function readCookie(name) {
+      var nameEQ = name + "=";
+      var ca = document.cookie.split(';');
+      for(var i=0;i < ca.length;i++) {
+          var c = ca[i];
+          while (c.charAt(0)==' ') c = c.substring(1,c.length);
+          if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+      }
+      return null;
+    }
 	
   	// phone menu opener
   	function toggleFunction() {
-  	    var x = document.getElementById("navDemo");
-  	    if (x.className.indexOf("w3-show") == -1) {
-  	        x.className += " w3-show";
-  	    } else {
-  	        x.className = x.className.replace(" w3-show", "");
-  	    }
+  	  var x = document.getElementById("navDemo");
+  	  if (x.className.indexOf("w3-show") == -1) {
+  	      x.className += " w3-show";
+  	  } else {
+  	      x.className = x.className.replace(" w3-show", "");
+  	  }
   	}
 </script>
 </body>
