@@ -355,6 +355,7 @@
     				<i class="tooltiptext w3-col m12">click on the image to go to the exact location in Google Maps</i>    				
     			</div>
     		</a>
+        <i>Image from Google Maps <i class="far fa-copyright">Google</i></i>
     	</div>
     	<div class="w3-col m6 w3-panel">
     	  	<div class="w3-large w3-margin-bottom">
@@ -384,7 +385,7 @@
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
   	<p><small>We do not guarantee data on this site to be accurate and current. This site is for informational purposes.</small></p>
-    <p><small>If you wish to see information about our cookies <a href="cookies_en.php" title="W3.CSS" target="_blank" class="w3-hover-text-green">click here</a>, if you wish to see information about our privacy policy <a href="privacy_policy_en.php" class="w3-hover-text-green">click here</a></small></p>
+    <p><small>If you wish to see information about our cookies <a href="cookies_en.php" title="W3.CSS" target="_blank" class="w3-hover-text-green">click here</a>, if you wish to see information about our Privacy policy <a href="privacy_policy_en.php" class="w3-hover-text-green">click here</a></small></p>
     <p>This site is powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
  

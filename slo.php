@@ -172,7 +172,7 @@
 </div>
 
 <!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+<div class="bgimg-1 w3-display-container" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
     <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"><span class="w3-hide-small">SIRARSTVO </span> ČEPON</span>
   </div>
@@ -213,7 +213,7 @@
 </div>
 
 <!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container w3-opacity-min">
+<div class="bgimg-2 w3-display-container">
   <div class="w3-display-middle">
     <span class="w3-xxlarge w3-text-white w3-wide parTekst">IZDELKI</span>
   </div>
@@ -351,7 +351,7 @@
 </div>
 
 <!-- contact img -->
-<div class="bgimg-3 w3-display-container w3-opacity-min">
+<div class="bgimg-3 w3-display-container">
  	<div class="w3-display-middle">
  		<span class="w3-xxlarge w3-text-white w3-wide kontaktT parTekst">KONTAKT</span>
  	</div>
@@ -369,6 +369,7 @@
     	  			<img src="imgs/site/map.JPG" class="mapIMG w3-col m12" alt="satelitska slika kmetije">
     				<i class="tooltiptext w3-col m12">kliknite na sliko, da vas zapelje na točno lokacijo v Google Maps</i>    				
     			</div>
+        <i>Slika od Google Maps <i class="far fa-copyright">2018 Google</i></i>
     		</a>
     	</div>
     	<div class="w3-col m6 w3-panel">
@@ -399,7 +400,7 @@
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
   	<p><small>Ne zagotavljamo, da so podatki na tej strani točni in trenutni. Stran je v informativne namene.</small></p>
-    <p><small>Če želite informacije o naših piškotkih <a href="cookies_sl.php" title="cookies" target="_blank" class="w3-hover-text-green">kliknite sem</a>, če želite videti pravilnik o zasebnosti <a href="privacy_policy_sl.php" class="w3-hover-text-green">kliknite sem</a></small></p>
+    <p>Če želite informacije o naših piškotkih <a href="cookies_sl.php" title="cookies" target="_blank" class="w3-hover-text-green">kliknite sem</a>, če želite videti pravilnik o zasebnosti <a href="privacy_policy_sl.php" class="w3-hover-text-green">kliknite sem</a>. Vaša uporaba naše strani je va</p>
   	<p>To stran poganja <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
  
