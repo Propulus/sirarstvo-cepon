@@ -31,16 +31,14 @@
 </head>
 <body class="all">
 <div class="w3-content w3-container w3-padding-64">
-  <h3 class="w3-center">O naših piškotkih</h3>
-  <p class="w3-center"><i>Kljub temu, da smo sirarna, jih imamo tudi mi</i></p>
-  <p>Piškotki so uporabljeni povsod na internetu, saj so izredno uporabno orodje za razvijalce. Z njimi pa se lahko delajo marsikatere zlonamerne reči, zato jim ne smete zaupati kar tako. Vendar na naši strani jih uporabljajo le orodja, kot so font awesome, jquery ipd. Mi pa jih uporabljamo, da si lahko stran zapomni vašo izbiro jezika in ali ste na njih pristali, da vam ne teži več. S tem, da ste na strani, se sklepa, da jih sprejemate, če pa se z njimi ne strinjate je edina možnost, da stran preprosto zapustite. Vendar brez skrbi tej piškotki, nimajo nič s hrano, tako da vas zagotovo ne bodo pojedli.</p>
-  <p class="w3-center">Za več informacij o piškotkih samih si lahko preberete več na tej povezavi: <a href="https://europa.eu/european-union/abouteuropa/cookies_sl" class="w3-hover-text-green">Piškotki - Evropska unija</a></p>
-  	<br>
   <h3 class="w3-center">About our cookies</h3>
   <p class="w3-center"><i>Despite us being a chesse dairy, we also have them</i></p>
   <p>Cookies are used everywhere on the internet because they are an incredibly useful tool for developers. On the other hand there are many malicious uses for them, therefore you should not just trust them without a thought. Yet on our site they are only used by tools like font awesome and jquery etc. Meanwhile we only use them so the site remembers your language preference and if you accepted the cookies, so that the banner doesn't bother you anymore. By you staying on the site, it is taken as you accepting them, but if you do not, your only option is leaving the site. Nevertheless these cookies have nothing to do with food, so they will surely not eat you.</p>
   <p class="w3-center">For more information on cookies you can read more on this link: <a href="https://europa.eu/european-union/abouteuropa/cookies_en">Cookies - European Union</a></p>
-  	<br>
+  	<br>    
+  <h3 class="w3-center">A bit more formally about cookies</h3>
+  <p>Cookies a very small text files used by practiacally every website to store local data to your device with which you accessed the web, so your computer, phone or tablet. This makes it so the site can recognize you locally as a user without using personal data. The storage and handling is completely controlled by the browser you use. All browsers give you, the user, the ability to control them by deleting, limiting or blocking them. In Slovenia Zakon o elektronskih komunikacijah or the Law of electronic communication (Uradni list number 109/2012), shortened ZEKom-1 brought rules about the use of cookies and similair technologies for storage and access of data, located on the computer, mogile phone or tablet of users. Cookies we use on the websites of the domain sirarstvo-cepon.si, with intent, to enable better user experience, do not give us a way to recognize you personaly. With the use of cookies data is stored on the users computer. For example, clicking on the Slovenian flag to choose the Slovenian language. If the user accepted cookies, a cookie is stored for 1 year, that keeps that preference.</p>
+    <br>
   <h3 class="w3-center">Which cookies do we use?</h3>
   	<table width="100%" class="w3-table-all">
   		<tr>
@@ -62,7 +60,7 @@
   			<td>1 year</td>
   		</tr>
   	</table>
-   <p class="w3-center"><a href="en.php" class="w3-hover-text-green">Return to main site</a></p>
+   <p class="w3-center"><a href="index.php" class="w3-hover-text-green">Return to main site</a></p>
 </div>
 </body>
 </html>

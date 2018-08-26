@@ -7,9 +7,15 @@
   	<link rel="stylesheet" href="css/w3.css">
   	<script src="jquery-3.3.1.min.js"></script>
 </head>
+<style type="text/css">
+  a {
+    text-decoration: none;
+  }
+</style>
 <body>
 	<h2>About out privacy policy</h2>
 	<p>Last edited: August 24. 2018</p>
 	<p>We collect no personal data from you. All that happens is that on your device, and your device only, cookies get stored. Our web hosting contract doesn't have a database, so we don't even have an option of doing so.</p>
+	<p>To return to the main site <a href="index.php" class="w3-hover-text-green">Click here</a></p>
 </body>
 </html>

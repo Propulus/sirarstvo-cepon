@@ -60,7 +60,7 @@
   	</tr>
   </table>
   <br>
-   <h5 class="w3-center"><a href="slo.php" class="w3-hover-text-green">Vrnite se na glavno stran</a></h5>
+   <h5 class="w3-center"><a href="index.php" class="w3-hover-text-green">Vrnite se na glavno stran</a></h5>
 </div>
 </body>
 </html>

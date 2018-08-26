@@ -43,6 +43,7 @@
 	}
 
 	.prodText {
+    color: black;
 		margin-top: 1em;
 	}
 
@@ -94,6 +95,11 @@
 	.w3-wide {letter-spacing: 10px;}
 	.w3-hover-opacity {cursor: pointer;}
 	/* Tooltip container */
+
+  .mainTitle {
+    position: relative;
+    bottom: 140px;
+  }
 
 	.tooltip {
 	    position: relative;
@@ -151,10 +157,10 @@
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       	<i class="fa fa-bars"></i>
     </a>
-    <a href="#home" 	 class="w3-bar-item w3-button home">DOMOV</a>
-    <a href="#about" 	 class="w3-bar-item w3-button w3-hide-small aboutUs"><i class="fa fa-user"></i> O NAS</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small portfolio"><i class="fa fa-th"></i> IZDELKI</a>
-    <a href="#contact" 	 class="w3-bar-item w3-button w3-hide-small contact"><i class="fa fa-envelope"></i> KONTAKT</a>
+    <a href="#home" 	 class="w3-bar-item w3-text-black w3-button home">DOMOV</a>
+    <a href="#about" 	 class="w3-bar-item w3-text-black w3-button w3-hide-small aboutUs"><i class="fa fa-user"></i> O NAS</a>
+    <a href="#portfolio" class="w3-bar-item w3-text-black w3-button w3-hide-small portfolio"><i class="fa fa-th"></i> IZDELKI</a>
+    <a href="#contact" 	 class="w3-bar-item w3-text-black w3-button w3-hide-small contact"><i class="fa fa-envelope"></i> KONTAKT</a>
     <a class="w3-bar-item w3-right w3-hover-black w3-button flagen">
       <img class="flagIcon  w3-sepia-max" id="enFlag" src="imgs/flags/en.svg">
     </a>
@@ -174,14 +180,14 @@
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"><span class="w3-hide-small">SIRARSTVO </span> ČEPON</span>
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity mainTitle"><span class="w3-hide-small">SIRARSTVO </span>ČEPON</span>
   </div>
 </div>
 
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
     <h3 class="w3-center">O NAS</h3>
-    <p>Kmetija ČEPON se nahaja nad samostanom Stična v občini Ivančna gorica. Ustanovitelja kmetije sta bila pokojni Vincencij in njegova žena  Heos Ferdinanda Čepon, ki sta pred dobrimi 26 leti začela z vzrejo koz in predelavo kozjega mleka. Tako sta tudi začela pot blagovne znamke ČEPON.</p>
+    <p>Kmetija ČEPON se nahaja nad samostanom Stična v občini Ivančna Gorica. Ustanovitelja kmetije sta bila pokojni Vincencij in njegova žena Heos Ferdinanda Čepon, ki sta pred dobrimi 26 leti začela z vzrejo koz in predelavo kozjega mleka. Tako sta tudi začela pot blagovne znamke ČEPON.</p>
     <p>V letu 2010 se jima je bolj po naključju zaradi naročila mizarskih storitev, kot pa z resnim namenom ukvarjati se s kozjerejo pridružil mladi mizar Jure Dremelj, kateremu pa so koze precej hitro prirasle k srcu in je vedno pogosteje obiskoval kmetijo in se pri pokojnem Vincenciju Čepon priučil veščin, ki so potrebne na kmetiji. V letu 2017 je Vincencij Čepon sprejel odločitev, da zaradi starosti zapre dopolnilno dejavnost in »ugasne« kmetijo, vendar ga je Jure Dremelj prepričal, da mu je kmetijo z mlekarskim obratom oddal v dolgoročni najem skupaj z blagovno znamko.</p>
     <p>Tako je Jure Dremelj s partnerko Saro Hribar (takrat še Hribar – sedaj Dremelj) s 1. 1. 2018 postal nosilec dopolnilne dejavnosti na kmetiji in nadaljuje z delom na kmetiji in v mlekarni. </p>
     <div class="w3-row-padding">
@@ -400,7 +406,8 @@
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
   	<p><small>Ne zagotavljamo, da so podatki na tej strani točni in trenutni. Stran je v informativne namene.</small></p>
-    <p>Če želite informacije o naših piškotkih <a href="cookies_sl.php" title="cookies" target="_blank" class="w3-hover-text-green">kliknite sem</a>, če želite videti pravilnik o zasebnosti <a href="privacy_policy_sl.php" class="w3-hover-text-green">kliknite sem</a>. Vaša uporaba naše strani je va</p>
+    <p>Če želite informacije o naših piškotkih <a href="cookies_sl.php" title="cookies" target="_blank" class="w3-hover-text-green">kliknite sem</a>, če želite videti pravilnik o zasebnosti <a href="privacy_policy_sl.php" class="w3-hover-text-green">kliknite sem</a>.</p>
+    <p>Vaša uporaba naše strani je vaša odgovornost, uporaba naših slik je dovoljena v primeru, da je vir naveden kot ta stran</p>
   	<p>To stran poganja <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
  
