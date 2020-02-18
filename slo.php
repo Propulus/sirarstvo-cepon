@@ -264,14 +264,14 @@
     <!-- lonček (d) -->
     <div class="w3-row-padding w3-center">
         <div class="w3-col m6 w3-hide-small prodText">
-            <h4>Jogurt iz kozjega mleka v lončku</h4>
+            <h4>Jogurt iz kozjega mleka</h4>
             <i>Zdravilnemu kozjemu mleku se po pasterizaciji med hlajenjem doda jogurtova kultura, nato sledi fermentacija  in nato dokončno hlajenje - nastane probiotični tekoči jogurt. Jogurt se lahko uporabi kot samostojni osvežilni napitek, dodaja pa se mu lahko različno sezonsko sadje po lastni izbiri posameznika. Proizvod se trži v trgovski verigi Mercator in trgovinah Interspar.</i>
         </div>
         <div class="w3-col m6">
             <img src="imgs/izdelki/p5.jpg" onclick="onClick(this)" class="w3-hover-opacity productIMG" alt="Jogurt v lončku">
         </div>
         <div class="w3-col m6 w3-hide-medium w3-hide-large prodText">
-            <h4>Jogurt iz kozjega mleka v lončku</h4>
+            <h4>Jogurt iz kozjega mleka</h4>
             <i>Zdravilnemu kozjemu mleku se po pasterizaciji med hlajenjem doda jogurtova kultura, nato sledi fermentacija  in nato dokončno hlajenje - nastane probiotični tekoči jogurt. Jogurt se lahko uporabi kot samostojni osvežilni napitek, dodaja pa se mu lahko različno sezonsko sadje po lastni izbiri posameznika. Proizvod se trži v trgovski verigi Mercator in trgovinah Interspar.</i>
         </div>
     </div>
