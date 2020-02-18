@@ -196,7 +196,7 @@
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity mainTitle"><span class="w3-hide-small">SIRARSTVO </span>ČEPON</span>
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity mainTitle"><span class="w3-hide-small">SIRARSTVO ČEPON</span><span class="w3-hide-medium w3-hide-large" style="font-size: 20px; letter-spacing: 5px;">SIRARSTVO ČEPON</span>
   </div>
 </div>
 
@@ -265,14 +265,14 @@
     <div class="w3-row-padding w3-center">
         <div class="w3-col m6 w3-hide-small prodText">
             <h4>Jogurt iz kozjega mleka</h4>
-            <i>Zdravilnemu kozjemu mleku se po pasterizaciji med hlajenjem doda jogurtova kultura, nato sledi fermentacija  in nato dokončno hlajenje - nastane probiotični tekoči jogurt. Jogurt se lahko uporabi kot samostojni osvežilni napitek, dodaja pa se mu lahko različno sezonsko sadje po lastni izbiri posameznika. Proizvod se trži v trgovski verigi Mercator in trgovinah Interspar.</i>
+            <i>Kozjemu mleku se po pasterizaciji med hlajenjem doda jogurtova kultura, sledi fermentacija  in nato dokončno hlajenje - nastane probiotični tekoči jogurt. Jogurt se lahko uporabi kot samostojni osvežilni napitek, dodaja pa se mu lahko različno sezonsko sadje po lastni izbiri posameznika. Ta proizvod lahko najdete v trgovski verigi Mercator in trgovinah Interspar.</i>
         </div>
         <div class="w3-col m6">
             <img src="imgs/izdelki/p5.jpg" onclick="onClick(this)" class="w3-hover-opacity productIMG" alt="Jogurt v lončku">
         </div>
         <div class="w3-col m6 w3-hide-medium w3-hide-large prodText">
             <h4>Jogurt iz kozjega mleka</h4>
-            <i>Zdravilnemu kozjemu mleku se po pasterizaciji med hlajenjem doda jogurtova kultura, nato sledi fermentacija  in nato dokončno hlajenje - nastane probiotični tekoči jogurt. Jogurt se lahko uporabi kot samostojni osvežilni napitek, dodaja pa se mu lahko različno sezonsko sadje po lastni izbiri posameznika. Proizvod se trži v trgovski verigi Mercator in trgovinah Interspar.</i>
+            <i>Zdravilnemu kozjemu mleku se po pasterizaciji med hlajenjem doda jogurtova kultura, nato sledi fermentacija  in nato dokončno hlajenje - nastane probiotični tekoči jogurt. Jogurt se lahko uporabi kot samostojni osvežilni napitek, dodaja pa se mu lahko različno sezonsko sadje po lastni izbiri posameznika. Ta proizvod lahko najdete v trgovski verigi Mercator in trgovinah Interspar.</i>
         </div>
     </div>
 	
@@ -516,6 +516,7 @@
       $("#fbNavbarMOBILE").show()
       $("#fbDropdownNavbarMOBILE").show()
       $("#fbContactMOBILE").show()
+
       $("#fbNavbarDESKTOP").hide()
       $("#fbDropdownNavbarDESKTOP").hide()
       $("#fbContactDESKTOP").hide()
@@ -525,6 +526,7 @@
       $("#fbNavbarMOBILE").hide()
       $("#fbDropdownNavbarMOBILE").hide()
       $("#fbContactMOBILE").hide()
+      
       $("#fbNavbarDESKTOP").show()
       $("#fbDropdownNavbarDESKTOP").show()
       $("#fbContactDESKTOP").show()
